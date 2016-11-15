@@ -1,0 +1,291 @@
+0
+[INFO ]20161114@15:55:57,485:org.apache.spark.SparkContext - Running Spark version 1.6.0
+[WARN ]20161114@15:56:00,232:org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[INFO ]20161114@15:56:01,779:org.apache.spark.SecurityManager - Changing view acls to: cloudera
+[INFO ]20161114@15:56:01,780:org.apache.spark.SecurityManager - Changing modify acls to: cloudera
+[INFO ]20161114@15:56:01,781:org.apache.spark.SecurityManager - SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(cloudera); users with modify permissions: Set(cloudera)
+[INFO ]20161114@15:56:03,400:org.apache.spark.util.Utils - Successfully started service 'sparkDriver' on port 46770.
+[INFO ]20161114@15:56:05,687:akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[INFO ]20161114@15:56:06,089:Remoting - Starting remoting
+[INFO ]20161114@15:56:07,189:Remoting - Remoting started; listening on addresses :[akka.tcp://sparkDriverActorSystem@10.0.2.15:45047]
+[INFO ]20161114@15:56:07,199:Remoting - Remoting now listens on addresses: [akka.tcp://sparkDriverActorSystem@10.0.2.15:45047]
+[INFO ]20161114@15:56:07,237:org.apache.spark.util.Utils - Successfully started service 'sparkDriverActorSystem' on port 45047.
+[INFO ]20161114@15:56:07,326:org.apache.spark.SparkEnv - Registering MapOutputTracker
+[INFO ]20161114@15:56:07,470:org.apache.spark.SparkEnv - Registering BlockManagerMaster
+[INFO ]20161114@15:56:07,524:org.apache.spark.storage.DiskBlockManager - Created local directory at /tmp/blockmgr-874023af-3384-4294-97cd-b4a6d012fce0
+[INFO ]20161114@15:56:07,643:org.apache.spark.storage.MemoryStore - MemoryStore started with capacity 500.1 MB
+[INFO ]20161114@15:56:07,959:org.apache.spark.SparkEnv - Registering OutputCommitCoordinator
+[INFO ]20161114@15:56:10,029:org.apache.spark.util.Utils - Successfully started service 'SparkUI' on port 4040.
+[INFO ]20161114@15:56:10,041:org.apache.spark.ui.SparkUI - Started SparkUI at http://10.0.2.15:4040
+[INFO ]20161114@15:56:11,093:org.apache.spark.executor.Executor - Starting executor ID driver on host localhost
+[INFO ]20161114@15:56:11,286:org.apache.spark.util.Utils - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 32782.
+[INFO ]20161114@15:56:11,288:org.apache.spark.network.netty.NettyBlockTransferService - Server created on 32782
+[INFO ]20161114@15:56:11,290:org.apache.spark.storage.BlockManagerMaster - Trying to register BlockManager
+[INFO ]20161114@15:56:11,297:org.apache.spark.storage.BlockManagerMasterEndpoint - Registering block manager localhost:32782 with 500.1 MB RAM, BlockManagerId(driver, localhost, 32782)
+[INFO ]20161114@15:56:11,303:org.apache.spark.storage.BlockManagerMaster - Registered BlockManager
+[INFO ]20161114@15:56:15,653:org.apache.spark.storage.MemoryStore - Block broadcast_0 stored as values in memory (estimated size 138.4 KB, free 138.4 KB)
+[INFO ]20161114@15:56:16,878:org.apache.spark.storage.MemoryStore - Block broadcast_0_piece0 stored as bytes in memory (estimated size 14.9 KB, free 153.4 KB)
+[INFO ]20161114@15:56:16,906:org.apache.spark.storage.BlockManagerInfo - Added broadcast_0_piece0 in memory on localhost:32782 (size: 14.9 KB, free: 500.1 MB)
+[INFO ]20161114@15:56:16,927:org.apache.spark.SparkContext - Created broadcast 0 from textFile at HW2_Part1.java:93
+[INFO ]20161114@15:56:18,515:org.apache.hadoop.mapred.FileInputFormat - Total input paths to process : 1
+[INFO ]20161114@15:56:19,209:org.apache.spark.SparkContext - Starting job: first at HW2_Part1.java:97
+[INFO ]20161114@15:56:19,367:org.apache.spark.scheduler.DAGScheduler - Got job 0 (first at HW2_Part1.java:97) with 1 output partitions
+[INFO ]20161114@15:56:19,370:org.apache.spark.scheduler.DAGScheduler - Final stage: ResultStage 0 (first at HW2_Part1.java:97)
+[INFO ]20161114@15:56:19,377:org.apache.spark.scheduler.DAGScheduler - Parents of final stage: List()
+[INFO ]20161114@15:56:19,407:org.apache.spark.scheduler.DAGScheduler - Missing parents: List()
+[INFO ]20161114@15:56:19,508:org.apache.spark.scheduler.DAGScheduler - Submitting ResultStage 0 (data/companies/SP500-constituents-financials.csv MapPartitionsRDD[1] at textFile at HW2_Part1.java:93), which has no missing parents
+[INFO ]20161114@15:56:19,549:org.apache.spark.storage.MemoryStore - Block broadcast_1 stored as values in memory (estimated size 3.1 KB, free 156.5 KB)
+[INFO ]20161114@15:56:19,650:org.apache.spark.storage.MemoryStore - Block broadcast_1_piece0 stored as bytes in memory (estimated size 1859.0 B, free 158.3 KB)
+[INFO ]20161114@15:56:19,651:org.apache.spark.storage.BlockManagerInfo - Added broadcast_1_piece0 in memory on localhost:32782 (size: 1859.0 B, free: 500.1 MB)
+[INFO ]20161114@15:56:19,655:org.apache.spark.SparkContext - Created broadcast 1 from broadcast at DAGScheduler.scala:1006
+[INFO ]20161114@15:56:19,674:org.apache.spark.scheduler.DAGScheduler - Submitting 1 missing tasks from ResultStage 0 (data/companies/SP500-constituents-financials.csv MapPartitionsRDD[1] at textFile at HW2_Part1.java:93)
+[INFO ]20161114@15:56:19,718:org.apache.spark.scheduler.TaskSchedulerImpl - Adding task set 0.0 with 1 tasks
+[INFO ]20161114@15:56:19,932:org.apache.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 0.0 (TID 0, localhost, partition 0,PROCESS_LOCAL, 2215 bytes)
+[INFO ]20161114@15:56:20,030:org.apache.spark.executor.Executor - Running task 0.0 in stage 0.0 (TID 0)
+[INFO ]20161114@15:56:20,166:org.apache.spark.CacheManager - Partition rdd_1_0 not found, computing it
+[INFO ]20161114@15:56:20,176:org.apache.spark.rdd.HadoopRDD - Input split: file:/home/cloudera/Desktop/workspace/hw2.zip_expanded/homework2/data/companies/SP500-constituents-financials.csv:0+82761
+[INFO ]20161114@15:56:20,263:org.apache.hadoop.conf.Configuration.deprecation - mapred.tip.id is deprecated. Instead, use mapreduce.task.id
+[INFO ]20161114@15:56:20,263:org.apache.hadoop.conf.Configuration.deprecation - mapred.task.id is deprecated. Instead, use mapreduce.task.attempt.id
+[INFO ]20161114@15:56:20,265:org.apache.hadoop.conf.Configuration.deprecation - mapred.task.is.map is deprecated. Instead, use mapreduce.task.ismap
+[INFO ]20161114@15:56:20,266:org.apache.hadoop.conf.Configuration.deprecation - mapred.task.partition is deprecated. Instead, use mapreduce.task.partition
+[INFO ]20161114@15:56:20,266:org.apache.hadoop.conf.Configuration.deprecation - mapred.job.id is deprecated. Instead, use mapreduce.job.id
+[INFO ]20161114@15:56:20,518:org.apache.spark.storage.MemoryStore - Block rdd_1_0 stored as values in memory (estimated size 181.8 KB, free 340.1 KB)
+[INFO ]20161114@15:56:20,533:org.apache.spark.storage.BlockManagerInfo - Added rdd_1_0 in memory on localhost:32782 (size: 181.8 KB, free: 499.9 MB)
+[INFO ]20161114@15:56:20,860:org.apache.spark.executor.Executor - Finished task 0.0 in stage 0.0 (TID 0). 2763 bytes result sent to driver
+[INFO ]20161114@15:56:21,020:org.apache.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 0.0 (TID 0) in 1094 ms on localhost (1/1)
+[INFO ]20161114@15:56:21,034:org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 0.0, whose tasks have all completed, from pool 
+[INFO ]20161114@15:56:21,050:org.apache.spark.scheduler.DAGScheduler - ResultStage 0 (first at HW2_Part1.java:97) finished in 1.282 s
+[INFO ]20161114@15:56:21,079:org.apache.spark.scheduler.DAGScheduler - Job 0 finished: first at HW2_Part1.java:97, took 1.863760 s
+[INFO ]20161114@15:56:21,691:org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - File Output Committer Algorithm version is 1
+[INFO ]20161114@15:56:22,044:org.apache.spark.SparkContext - Starting job: saveAsTextFile at HW2_Part1.java:113
+[INFO ]20161114@15:56:22,061:org.apache.spark.scheduler.DAGScheduler - Registering RDD 8 (sortBy at HW2_Part1.java:111)
+[INFO ]20161114@15:56:22,062:org.apache.spark.scheduler.DAGScheduler - Got job 1 (saveAsTextFile at HW2_Part1.java:113) with 1 output partitions
+[INFO ]20161114@15:56:22,065:org.apache.spark.scheduler.DAGScheduler - Final stage: ResultStage 2 (saveAsTextFile at HW2_Part1.java:113)
+[INFO ]20161114@15:56:22,066:org.apache.spark.scheduler.DAGScheduler - Parents of final stage: List(ShuffleMapStage 1)
+[INFO ]20161114@15:56:22,067:org.apache.spark.scheduler.DAGScheduler - Missing parents: List(ShuffleMapStage 1)
+[INFO ]20161114@15:56:22,100:org.apache.spark.scheduler.DAGScheduler - Submitting ShuffleMapStage 1 (MapPartitionsRDD[8] at sortBy at HW2_Part1.java:111), which has no missing parents
+[INFO ]20161114@15:56:22,154:org.apache.spark.storage.MemoryStore - Block broadcast_2 stored as values in memory (estimated size 6.6 KB, free 346.7 KB)
+[INFO ]20161114@15:56:22,181:org.apache.spark.storage.MemoryStore - Block broadcast_2_piece0 stored as bytes in memory (estimated size 3.4 KB, free 350.1 KB)
+[INFO ]20161114@15:56:22,182:org.apache.spark.storage.BlockManagerInfo - Added broadcast_2_piece0 in memory on localhost:32782 (size: 3.4 KB, free: 499.9 MB)
+[INFO ]20161114@15:56:22,190:org.apache.spark.SparkContext - Created broadcast 2 from broadcast at DAGScheduler.scala:1006
+[INFO ]20161114@15:56:22,197:org.apache.spark.scheduler.DAGScheduler - Submitting 1 missing tasks from ShuffleMapStage 1 (MapPartitionsRDD[8] at sortBy at HW2_Part1.java:111)
+[INFO ]20161114@15:56:22,198:org.apache.spark.scheduler.TaskSchedulerImpl - Adding task set 1.0 with 1 tasks
+[INFO ]20161114@15:56:22,218:org.apache.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 1.0 (TID 1, localhost, partition 0,PROCESS_LOCAL, 2204 bytes)
+[INFO ]20161114@15:56:22,220:org.apache.spark.executor.Executor - Running task 0.0 in stage 1.0 (TID 1)
+[INFO ]20161114@15:56:22,357:org.apache.spark.storage.BlockManager - Found block rdd_1_0 locally
+[INFO ]20161114@15:56:22,737:org.apache.spark.executor.Executor - Finished task 0.0 in stage 1.0 (TID 1). 2182 bytes result sent to driver
+[INFO ]20161114@15:56:22,768:org.apache.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 1.0 (TID 1) in 550 ms on localhost (1/1)
+[INFO ]20161114@15:56:22,768:org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 1.0, whose tasks have all completed, from pool 
+[INFO ]20161114@15:56:22,772:org.apache.spark.scheduler.DAGScheduler - ShuffleMapStage 1 (sortBy at HW2_Part1.java:111) finished in 0.557 s
+[INFO ]20161114@15:56:22,779:org.apache.spark.scheduler.DAGScheduler - looking for newly runnable stages
+[INFO ]20161114@15:56:22,780:org.apache.spark.scheduler.DAGScheduler - running: Set()
+[INFO ]20161114@15:56:22,780:org.apache.spark.scheduler.DAGScheduler - waiting: Set(ResultStage 2)
+[INFO ]20161114@15:56:22,780:org.apache.spark.scheduler.DAGScheduler - failed: Set()
+[INFO ]20161114@15:56:22,786:org.apache.spark.scheduler.DAGScheduler - Submitting ResultStage 2 (MapPartitionsRDD[11] at saveAsTextFile at HW2_Part1.java:113), which has no missing parents
+[INFO ]20161114@15:56:22,941:org.apache.spark.storage.MemoryStore - Block broadcast_3 stored as values in memory (estimated size 71.4 KB, free 421.5 KB)
+[INFO ]20161114@15:56:23,135:org.apache.spark.storage.MemoryStore - Block broadcast_3_piece0 stored as bytes in memory (estimated size 24.9 KB, free 446.4 KB)
+[INFO ]20161114@15:56:23,138:org.apache.spark.storage.BlockManagerInfo - Added broadcast_3_piece0 in memory on localhost:32782 (size: 24.9 KB, free: 499.9 MB)
+[INFO ]20161114@15:56:23,139:org.apache.spark.SparkContext - Created broadcast 3 from broadcast at DAGScheduler.scala:1006
+[INFO ]20161114@15:56:23,140:org.apache.spark.scheduler.DAGScheduler - Submitting 1 missing tasks from ResultStage 2 (MapPartitionsRDD[11] at saveAsTextFile at HW2_Part1.java:113)
+[INFO ]20161114@15:56:23,140:org.apache.spark.scheduler.TaskSchedulerImpl - Adding task set 2.0 with 1 tasks
+[INFO ]20161114@15:56:23,154:org.apache.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 2.0 (TID 2, localhost, partition 0,NODE_LOCAL, 1894 bytes)
+[INFO ]20161114@15:56:23,156:org.apache.spark.executor.Executor - Running task 0.0 in stage 2.0 (TID 2)
+[INFO ]20161114@15:56:23,373:org.apache.spark.storage.ShuffleBlockFetcherIterator - Getting 1 non-empty blocks out of 1 blocks
+[INFO ]20161114@15:56:23,387:org.apache.spark.storage.ShuffleBlockFetcherIterator - Started 0 remote fetches in 21 ms
+[INFO ]20161114@15:56:23,884:org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - File Output Committer Algorithm version is 1
+[INFO ]20161114@15:56:23,892:org.apache.spark.storage.BlockManagerInfo - Removed broadcast_2_piece0 on localhost:32782 in memory (size: 3.4 KB, free: 499.9 MB)
+[INFO ]20161114@15:56:24,223:org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - Saved output of task 'attempt_201611141556_0002_m_000000_2' to file:/home/cloudera/Desktop/workspace/hw2.zip_expanded/homework2/output/hw2_1_1479167772410/_temporary/0/task_201611141556_0002_m_000000
+[INFO ]20161114@15:56:24,225:org.apache.spark.mapred.SparkHadoopMapRedUtil - attempt_201611141556_0002_m_000000_2: Committed
+[INFO ]20161114@15:56:24,248:org.apache.spark.executor.Executor - Finished task 0.0 in stage 2.0 (TID 2). 2038 bytes result sent to driver
+[INFO ]20161114@15:56:24,284:org.apache.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 2.0 (TID 2) in 1130 ms on localhost (1/1)
+[INFO ]20161114@15:56:24,293:org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 2.0, whose tasks have all completed, from pool 
+[INFO ]20161114@15:56:24,307:org.apache.spark.scheduler.DAGScheduler - ResultStage 2 (saveAsTextFile at HW2_Part1.java:113) finished in 1.155 s
+[INFO ]20161114@15:56:24,308:org.apache.spark.scheduler.DAGScheduler - Job 1 finished: saveAsTextFile at HW2_Part1.java:113, took 2.262380 s
+[INFO ]20161114@15:56:24,503:org.apache.spark.ui.SparkUI - Stopped Spark web UI at http://10.0.2.15:4040
+[INFO ]20161114@15:56:24,562:org.apache.spark.MapOutputTrackerMasterEndpoint - MapOutputTrackerMasterEndpoint stopped!
+[INFO ]20161114@15:56:24,598:org.apache.spark.storage.MemoryStore - MemoryStore cleared
+[INFO ]20161114@15:56:24,600:org.apache.spark.storage.BlockManager - BlockManager stopped
+[INFO ]20161114@15:56:24,602:org.apache.spark.storage.BlockManagerMaster - BlockManagerMaster stopped
+[INFO ]20161114@15:56:24,635:org.apache.spark.scheduler.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint - OutputCommitCoordinator stopped!
+[INFO ]20161114@15:56:24,661:org.apache.spark.SparkContext - Successfully stopped SparkContext
+[INFO ]20161114@15:56:24,692:org.apache.spark.util.ShutdownHookManager - Shutdown hook called
+[INFO ]20161114@15:56:24,693:org.apache.spark.util.ShutdownHookManager - Deleting directory /tmp/spark-7410402e-7cfd-41fb-9ecc-d60c70d05cfa
+[INFO ]20161114@15:56:39,486:org.apache.spark.SparkContext - Running Spark version 1.6.0
+[WARN ]20161114@15:56:40,793:org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[INFO ]20161114@15:56:41,823:org.apache.spark.SecurityManager - Changing view acls to: cloudera
+[INFO ]20161114@15:56:41,823:org.apache.spark.SecurityManager - Changing modify acls to: cloudera
+[INFO ]20161114@15:56:41,828:org.apache.spark.SecurityManager - SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(cloudera); users with modify permissions: Set(cloudera)
+[INFO ]20161114@15:56:42,718:org.apache.spark.util.Utils - Successfully started service 'sparkDriver' on port 58400.
+[INFO ]20161114@15:56:43,907:akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[INFO ]20161114@15:56:44,111:Remoting - Starting remoting
+[INFO ]20161114@15:56:44,708:Remoting - Remoting started; listening on addresses :[akka.tcp://sparkDriverActorSystem@10.0.2.15:56742]
+[INFO ]20161114@15:56:44,717:Remoting - Remoting now listens on addresses: [akka.tcp://sparkDriverActorSystem@10.0.2.15:56742]
+[INFO ]20161114@15:56:44,751:org.apache.spark.util.Utils - Successfully started service 'sparkDriverActorSystem' on port 56742.
+[INFO ]20161114@15:56:44,809:org.apache.spark.SparkEnv - Registering MapOutputTracker
+[INFO ]20161114@15:56:44,871:org.apache.spark.SparkEnv - Registering BlockManagerMaster
+[INFO ]20161114@15:56:44,937:org.apache.spark.storage.DiskBlockManager - Created local directory at /tmp/blockmgr-0d78d3df-8de1-4bac-9924-ee0ca2bb996f
+[INFO ]20161114@15:56:45,033:org.apache.spark.storage.MemoryStore - MemoryStore started with capacity 500.1 MB
+[INFO ]20161114@15:56:45,297:org.apache.spark.SparkEnv - Registering OutputCommitCoordinator
+[INFO ]20161114@15:56:46,700:org.apache.spark.util.Utils - Successfully started service 'SparkUI' on port 4040.
+[INFO ]20161114@15:56:46,702:org.apache.spark.ui.SparkUI - Started SparkUI at http://10.0.2.15:4040
+[INFO ]20161114@15:56:47,123:org.apache.spark.executor.Executor - Starting executor ID driver on host localhost
+[INFO ]20161114@15:56:47,358:org.apache.spark.util.Utils - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 37375.
+[INFO ]20161114@15:56:47,364:org.apache.spark.network.netty.NettyBlockTransferService - Server created on 37375
+[INFO ]20161114@15:56:47,376:org.apache.spark.storage.BlockManagerMaster - Trying to register BlockManager
+[INFO ]20161114@15:56:47,407:org.apache.spark.storage.BlockManagerMasterEndpoint - Registering block manager localhost:37375 with 500.1 MB RAM, BlockManagerId(driver, localhost, 37375)
+[INFO ]20161114@15:56:47,409:org.apache.spark.storage.BlockManagerMaster - Registered BlockManager
+[INFO ]20161114@15:56:50,064:org.apache.spark.storage.MemoryStore - Block broadcast_0 stored as values in memory (estimated size 138.4 KB, free 138.4 KB)
+[INFO ]20161114@15:56:50,370:org.apache.spark.storage.MemoryStore - Block broadcast_0_piece0 stored as bytes in memory (estimated size 14.9 KB, free 153.4 KB)
+[INFO ]20161114@15:56:50,381:org.apache.spark.storage.BlockManagerInfo - Added broadcast_0_piece0 in memory on localhost:37375 (size: 14.9 KB, free: 500.1 MB)
+[INFO ]20161114@15:56:50,448:org.apache.spark.SparkContext - Created broadcast 0 from textFile at JoinCsvFiles.java:40
+[INFO ]20161114@15:56:50,850:org.apache.spark.storage.MemoryStore - Block broadcast_1 stored as values in memory (estimated size 138.5 KB, free 291.8 KB)
+[INFO ]20161114@15:56:50,935:org.apache.spark.storage.MemoryStore - Block broadcast_1_piece0 stored as bytes in memory (estimated size 14.9 KB, free 306.8 KB)
+[INFO ]20161114@15:56:50,942:org.apache.spark.storage.BlockManagerInfo - Added broadcast_1_piece0 in memory on localhost:37375 (size: 14.9 KB, free: 500.1 MB)
+[INFO ]20161114@15:56:50,954:org.apache.spark.SparkContext - Created broadcast 1 from textFile at JoinCsvFiles.java:41
+[INFO ]20161114@15:56:52,752:org.apache.hadoop.mapred.FileInputFormat - Total input paths to process : 1
+[INFO ]20161114@15:56:53,003:org.apache.hadoop.mapred.FileInputFormat - Total input paths to process : 1
+[INFO ]20161114@15:56:53,475:org.apache.spark.SparkContext - Starting job: collect at HW2_Part2.java:80
+[INFO ]20161114@15:56:53,767:org.apache.spark.scheduler.DAGScheduler - Registering RDD 4 (mapToPair at JoinCsvFiles.java:44)
+[INFO ]20161114@15:56:53,774:org.apache.spark.scheduler.DAGScheduler - Registering RDD 5 (mapToPair at JoinCsvFiles.java:45)
+[INFO ]20161114@15:56:53,787:org.apache.spark.scheduler.DAGScheduler - Got job 0 (collect at HW2_Part2.java:80) with 1 output partitions
+[INFO ]20161114@15:56:53,789:org.apache.spark.scheduler.DAGScheduler - Final stage: ResultStage 2 (collect at HW2_Part2.java:80)
+[INFO ]20161114@15:56:53,794:org.apache.spark.scheduler.DAGScheduler - Parents of final stage: List(ShuffleMapStage 0, ShuffleMapStage 1)
+[INFO ]20161114@15:56:53,815:org.apache.spark.scheduler.DAGScheduler - Missing parents: List(ShuffleMapStage 0, ShuffleMapStage 1)
+[INFO ]20161114@15:56:53,968:org.apache.spark.scheduler.DAGScheduler - Submitting ShuffleMapStage 0 (MapPartitionsRDD[4] at mapToPair at JoinCsvFiles.java:44), which has no missing parents
+[INFO ]20161114@15:56:54,122:org.apache.spark.storage.MemoryStore - Block broadcast_2 stored as values in memory (estimated size 3.9 KB, free 310.6 KB)
+[INFO ]20161114@15:56:54,184:org.apache.spark.storage.MemoryStore - Block broadcast_2_piece0 stored as bytes in memory (estimated size 2.3 KB, free 312.9 KB)
+[INFO ]20161114@15:56:54,191:org.apache.spark.storage.BlockManagerInfo - Added broadcast_2_piece0 in memory on localhost:37375 (size: 2.3 KB, free: 500.1 MB)
+[INFO ]20161114@15:56:54,195:org.apache.spark.SparkContext - Created broadcast 2 from broadcast at DAGScheduler.scala:1006
+[INFO ]20161114@15:56:54,223:org.apache.spark.scheduler.DAGScheduler - Submitting 1 missing tasks from ShuffleMapStage 0 (MapPartitionsRDD[4] at mapToPair at JoinCsvFiles.java:44)
+[INFO ]20161114@15:56:54,247:org.apache.spark.scheduler.TaskSchedulerImpl - Adding task set 0.0 with 1 tasks
+[INFO ]20161114@15:56:54,456:org.apache.spark.scheduler.DAGScheduler - Submitting ShuffleMapStage 1 (MapPartitionsRDD[5] at mapToPair at JoinCsvFiles.java:45), which has no missing parents
+[INFO ]20161114@15:56:54,461:org.apache.spark.storage.MemoryStore - Block broadcast_3 stored as values in memory (estimated size 3.9 KB, free 316.8 KB)
+[INFO ]20161114@15:56:54,469:org.apache.spark.storage.MemoryStore - Block broadcast_3_piece0 stored as bytes in memory (estimated size 2.3 KB, free 319.1 KB)
+[INFO ]20161114@15:56:54,960:org.apache.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 0.0 (TID 0, localhost, partition 0,PROCESS_LOCAL, 2192 bytes)
+[INFO ]20161114@15:56:55,101:org.apache.spark.storage.BlockManagerInfo - Added broadcast_3_piece0 in memory on localhost:37375 (size: 2.3 KB, free: 500.1 MB)
+[INFO ]20161114@15:56:55,103:org.apache.spark.SparkContext - Created broadcast 3 from broadcast at DAGScheduler.scala:1006
+[INFO ]20161114@15:56:55,103:org.apache.spark.scheduler.DAGScheduler - Submitting 1 missing tasks from ShuffleMapStage 1 (MapPartitionsRDD[5] at mapToPair at JoinCsvFiles.java:45)
+[INFO ]20161114@15:56:55,103:org.apache.spark.scheduler.TaskSchedulerImpl - Adding task set 1.0 with 1 tasks
+[INFO ]20161114@15:56:55,224:org.apache.spark.executor.Executor - Running task 0.0 in stage 0.0 (TID 0)
+[INFO ]20161114@15:56:55,628:org.apache.spark.rdd.HadoopRDD - Input split: file:/home/cloudera/Desktop/workspace/hw2.zip_expanded/homework2/data/companies/companylistNASDAQ.csv:0+408959
+[INFO ]20161114@15:56:55,784:org.apache.hadoop.conf.Configuration.deprecation - mapred.tip.id is deprecated. Instead, use mapreduce.task.id
+[INFO ]20161114@15:56:55,784:org.apache.hadoop.conf.Configuration.deprecation - mapred.task.id is deprecated. Instead, use mapreduce.task.attempt.id
+[INFO ]20161114@15:56:55,785:org.apache.hadoop.conf.Configuration.deprecation - mapred.task.is.map is deprecated. Instead, use mapreduce.task.ismap
+[INFO ]20161114@15:56:55,786:org.apache.hadoop.conf.Configuration.deprecation - mapred.task.partition is deprecated. Instead, use mapreduce.task.partition
+[INFO ]20161114@15:56:55,787:org.apache.hadoop.conf.Configuration.deprecation - mapred.job.id is deprecated. Instead, use mapreduce.job.id
+[INFO ]20161114@15:56:57,036:org.apache.spark.executor.Executor - Finished task 0.0 in stage 0.0 (TID 0). 2253 bytes result sent to driver
+[INFO ]20161114@15:56:57,097:org.apache.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 1.0 (TID 1, localhost, partition 0,PROCESS_LOCAL, 2204 bytes)
+[INFO ]20161114@15:56:57,103:org.apache.spark.executor.Executor - Running task 0.0 in stage 1.0 (TID 1)
+[INFO ]20161114@15:56:57,111:org.apache.spark.rdd.HadoopRDD - Input split: file:/home/cloudera/Desktop/workspace/hw2.zip_expanded/homework2/data/companies/SP500-constituents-financials.csv:0+82761
+[INFO ]20161114@15:56:57,190:org.apache.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 0.0 (TID 0) in 2441 ms on localhost (1/1)
+[INFO ]20161114@15:56:57,212:org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 0.0, whose tasks have all completed, from pool 
+[INFO ]20161114@15:56:57,287:org.apache.spark.scheduler.DAGScheduler - ShuffleMapStage 0 (mapToPair at JoinCsvFiles.java:44) finished in 2.831 s
+[INFO ]20161114@15:56:57,300:org.apache.spark.scheduler.DAGScheduler - looking for newly runnable stages
+[INFO ]20161114@15:56:57,301:org.apache.spark.scheduler.DAGScheduler - running: Set(ShuffleMapStage 1)
+[INFO ]20161114@15:56:57,301:org.apache.spark.scheduler.DAGScheduler - waiting: Set(ResultStage 2)
+[INFO ]20161114@15:56:57,305:org.apache.spark.scheduler.DAGScheduler - failed: Set()
+[INFO ]20161114@15:56:57,314:org.apache.spark.executor.Executor - Finished task 0.0 in stage 1.0 (TID 1). 2253 bytes result sent to driver
+[INFO ]20161114@15:56:57,347:org.apache.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 1.0 (TID 1) in 259 ms on localhost (1/1)
+[INFO ]20161114@15:56:57,347:org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 1.0, whose tasks have all completed, from pool 
+[INFO ]20161114@15:56:57,349:org.apache.spark.scheduler.DAGScheduler - ShuffleMapStage 1 (mapToPair at JoinCsvFiles.java:45) finished in 2.246 s
+[INFO ]20161114@15:56:57,349:org.apache.spark.scheduler.DAGScheduler - looking for newly runnable stages
+[INFO ]20161114@15:56:57,349:org.apache.spark.scheduler.DAGScheduler - running: Set()
+[INFO ]20161114@15:56:57,349:org.apache.spark.scheduler.DAGScheduler - waiting: Set(ResultStage 2)
+[INFO ]20161114@15:56:57,349:org.apache.spark.scheduler.DAGScheduler - failed: Set()
+[INFO ]20161114@15:56:57,358:org.apache.spark.scheduler.DAGScheduler - Submitting ResultStage 2 (MapPartitionsRDD[9] at filter at HW2_Part2.java:77), which has no missing parents
+[INFO ]20161114@15:56:57,381:org.apache.spark.storage.MemoryStore - Block broadcast_4 stored as values in memory (estimated size 4.3 KB, free 323.4 KB)
+[INFO ]20161114@15:56:57,397:org.apache.spark.storage.MemoryStore - Block broadcast_4_piece0 stored as bytes in memory (estimated size 2.3 KB, free 325.7 KB)
+[INFO ]20161114@15:56:57,410:org.apache.spark.storage.BlockManagerInfo - Added broadcast_4_piece0 in memory on localhost:37375 (size: 2.3 KB, free: 500.1 MB)
+[INFO ]20161114@15:56:57,411:org.apache.spark.SparkContext - Created broadcast 4 from broadcast at DAGScheduler.scala:1006
+[INFO ]20161114@15:56:57,427:org.apache.spark.scheduler.DAGScheduler - Submitting 1 missing tasks from ResultStage 2 (MapPartitionsRDD[9] at filter at HW2_Part2.java:77)
+[INFO ]20161114@15:56:57,427:org.apache.spark.scheduler.TaskSchedulerImpl - Adding task set 2.0 with 1 tasks
+[INFO ]20161114@15:56:57,431:org.apache.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 2.0 (TID 2, localhost, partition 0,PROCESS_LOCAL, 1967 bytes)
+[INFO ]20161114@15:56:57,431:org.apache.spark.executor.Executor - Running task 0.0 in stage 2.0 (TID 2)
+[INFO ]20161114@15:56:57,495:org.apache.spark.CacheManager - Partition rdd_9_0 not found, computing it
+[INFO ]20161114@15:56:57,561:org.apache.spark.storage.ShuffleBlockFetcherIterator - Getting 1 non-empty blocks out of 1 blocks
+[INFO ]20161114@15:56:57,583:org.apache.spark.storage.ShuffleBlockFetcherIterator - Started 0 remote fetches in 47 ms
+[INFO ]20161114@15:56:57,678:org.apache.spark.storage.ShuffleBlockFetcherIterator - Getting 1 non-empty blocks out of 1 blocks
+[INFO ]20161114@15:56:57,678:org.apache.spark.storage.ShuffleBlockFetcherIterator - Started 0 remote fetches in 0 ms
+[INFO ]20161114@15:56:59,542:org.apache.spark.storage.MemoryStore - Block rdd_9_0 stored as values in memory (estimated size 195.1 KB, free 520.8 KB)
+[INFO ]20161114@15:56:59,542:org.apache.spark.storage.BlockManagerInfo - Added rdd_9_0 in memory on localhost:37375 (size: 195.1 KB, free: 499.9 MB)
+[INFO ]20161114@15:56:59,615:org.apache.spark.executor.Executor - Finished task 0.0 in stage 2.0 (TID 2). 45377 bytes result sent to driver
+[INFO ]20161114@15:56:59,656:org.apache.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 2.0 (TID 2) in 2211 ms on localhost (1/1)
+[INFO ]20161114@15:56:59,657:org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 2.0, whose tasks have all completed, from pool 
+[INFO ]20161114@15:56:59,666:org.apache.spark.scheduler.DAGScheduler - ResultStage 2 (collect at HW2_Part2.java:80) finished in 2.223 s
+[INFO ]20161114@15:56:59,739:org.apache.spark.scheduler.DAGScheduler - Job 0 finished: collect at HW2_Part2.java:80, took 6.261780 s
+[INFO ]20161114@15:57:00,267:org.apache.spark.SparkContext - Starting job: takeOrdered at HW2_Part2.java:91
+[INFO ]20161114@15:57:00,296:org.apache.spark.MapOutputTrackerMaster - Size of output statuses for shuffle 0 is 143 bytes
+[INFO ]20161114@15:57:00,324:org.apache.spark.MapOutputTrackerMaster - Size of output statuses for shuffle 1 is 143 bytes
+[INFO ]20161114@15:57:00,347:org.apache.spark.scheduler.DAGScheduler - Got job 1 (takeOrdered at HW2_Part2.java:91) with 1 output partitions
+[INFO ]20161114@15:57:00,348:org.apache.spark.scheduler.DAGScheduler - Final stage: ResultStage 5 (takeOrdered at HW2_Part2.java:91)
+[INFO ]20161114@15:57:00,348:org.apache.spark.scheduler.DAGScheduler - Parents of final stage: List(ShuffleMapStage 3, ShuffleMapStage 4)
+[INFO ]20161114@15:57:00,352:org.apache.spark.scheduler.DAGScheduler - Missing parents: List()
+[INFO ]20161114@15:57:00,360:org.apache.spark.scheduler.DAGScheduler - Submitting ResultStage 5 (MapPartitionsRDD[13] at takeOrdered at HW2_Part2.java:91), which has no missing parents
+[INFO ]20161114@15:57:00,370:org.apache.spark.storage.MemoryStore - Block broadcast_5 stored as values in memory (estimated size 5.5 KB, free 526.3 KB)
+[INFO ]20161114@15:57:00,419:org.apache.spark.storage.MemoryStore - Block broadcast_5_piece0 stored as bytes in memory (estimated size 2.8 KB, free 529.2 KB)
+[INFO ]20161114@15:57:00,420:org.apache.spark.storage.BlockManagerInfo - Added broadcast_5_piece0 in memory on localhost:37375 (size: 2.8 KB, free: 499.9 MB)
+[INFO ]20161114@15:57:00,437:org.apache.spark.SparkContext - Created broadcast 5 from broadcast at DAGScheduler.scala:1006
+[INFO ]20161114@15:57:00,438:org.apache.spark.scheduler.DAGScheduler - Submitting 1 missing tasks from ResultStage 5 (MapPartitionsRDD[13] at takeOrdered at HW2_Part2.java:91)
+[INFO ]20161114@15:57:00,448:org.apache.spark.scheduler.TaskSchedulerImpl - Adding task set 5.0 with 1 tasks
+[INFO ]20161114@15:57:00,576:org.apache.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 5.0 (TID 3, localhost, partition 0,PROCESS_LOCAL, 1967 bytes)
+[INFO ]20161114@15:57:00,584:org.apache.spark.executor.Executor - Running task 0.0 in stage 5.0 (TID 3)
+[INFO ]20161114@15:57:00,652:org.apache.spark.storage.BlockManager - Found block rdd_9_0 locally
+[INFO ]20161114@15:57:00,829:org.apache.spark.executor.Executor - Finished task 0.0 in stage 5.0 (TID 3). 2852 bytes result sent to driver
+[INFO ]20161114@15:57:00,880:org.apache.spark.scheduler.DAGScheduler - ResultStage 5 (takeOrdered at HW2_Part2.java:91) finished in 0.399 s
+[INFO ]20161114@15:57:00,882:org.apache.spark.scheduler.DAGScheduler - Job 1 finished: takeOrdered at HW2_Part2.java:91, took 0.614450 s
+[INFO ]20161114@15:57:00,891:org.apache.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 5.0 (TID 3) in 399 ms on localhost (1/1)
+[INFO ]20161114@15:57:00,891:org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 5.0, whose tasks have all completed, from pool 
+[INFO ]20161114@15:57:01,053:org.apache.spark.SparkContext - Starting job: takeOrdered at HW2_Part2.java:95
+[INFO ]20161114@15:57:01,090:org.apache.spark.scheduler.DAGScheduler - Got job 2 (takeOrdered at HW2_Part2.java:95) with 1 output partitions
+[INFO ]20161114@15:57:01,093:org.apache.spark.scheduler.DAGScheduler - Final stage: ResultStage 8 (takeOrdered at HW2_Part2.java:95)
+[INFO ]20161114@15:57:01,095:org.apache.spark.scheduler.DAGScheduler - Parents of final stage: List(ShuffleMapStage 6, ShuffleMapStage 7)
+[INFO ]20161114@15:57:01,095:org.apache.spark.scheduler.DAGScheduler - Missing parents: List()
+[INFO ]20161114@15:57:01,111:org.apache.spark.scheduler.DAGScheduler - Submitting ResultStage 8 (MapPartitionsRDD[16] at takeOrdered at HW2_Part2.java:95), which has no missing parents
+[INFO ]20161114@15:57:01,130:org.apache.spark.storage.MemoryStore - Block broadcast_6 stored as values in memory (estimated size 5.4 KB, free 534.5 KB)
+[INFO ]20161114@15:57:01,156:org.apache.spark.storage.MemoryStore - Block broadcast_6_piece0 stored as bytes in memory (estimated size 2.8 KB, free 537.3 KB)
+[INFO ]20161114@15:57:01,161:org.apache.spark.storage.BlockManagerInfo - Added broadcast_6_piece0 in memory on localhost:37375 (size: 2.8 KB, free: 499.9 MB)
+[INFO ]20161114@15:57:01,164:org.apache.spark.SparkContext - Created broadcast 6 from broadcast at DAGScheduler.scala:1006
+[INFO ]20161114@15:57:01,171:org.apache.spark.scheduler.DAGScheduler - Submitting 1 missing tasks from ResultStage 8 (MapPartitionsRDD[16] at takeOrdered at HW2_Part2.java:95)
+[INFO ]20161114@15:57:01,263:org.apache.spark.scheduler.TaskSchedulerImpl - Adding task set 8.0 with 1 tasks
+[INFO ]20161114@15:57:01,273:org.apache.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 8.0 (TID 4, localhost, partition 0,PROCESS_LOCAL, 1967 bytes)
+[INFO ]20161114@15:57:01,273:org.apache.spark.executor.Executor - Running task 0.0 in stage 8.0 (TID 4)
+[INFO ]20161114@15:57:01,406:org.apache.spark.storage.BlockManager - Found block rdd_9_0 locally
+[INFO ]20161114@15:57:01,413:org.apache.spark.executor.Executor - Finished task 0.0 in stage 8.0 (TID 4). 2852 bytes result sent to driver
+[INFO ]20161114@15:57:01,414:org.apache.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 8.0 (TID 4) in 142 ms on localhost (1/1)
+[INFO ]20161114@15:57:01,417:org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 8.0, whose tasks have all completed, from pool 
+[INFO ]20161114@15:57:01,417:org.apache.spark.scheduler.DAGScheduler - ResultStage 8 (takeOrdered at HW2_Part2.java:95) finished in 0.141 s
+[INFO ]20161114@15:57:01,420:org.apache.spark.scheduler.DAGScheduler - Job 2 finished: takeOrdered at HW2_Part2.java:95, took 0.357238 s
+[INFO ]20161114@15:57:01,436:org.apache.spark.SparkContext - Starting job: count at HW2_Part2.java:99
+[INFO ]20161114@15:57:01,437:org.apache.spark.scheduler.DAGScheduler - Got job 3 (count at HW2_Part2.java:99) with 1 output partitions
+[INFO ]20161114@15:57:01,437:org.apache.spark.scheduler.DAGScheduler - Final stage: ResultStage 11 (count at HW2_Part2.java:99)
+[INFO ]20161114@15:57:01,437:org.apache.spark.scheduler.DAGScheduler - Parents of final stage: List(ShuffleMapStage 9, ShuffleMapStage 10)
+[INFO ]20161114@15:57:01,438:org.apache.spark.scheduler.DAGScheduler - Missing parents: List()
+[INFO ]20161114@15:57:01,439:org.apache.spark.scheduler.DAGScheduler - Submitting ResultStage 11 (MapPartitionsRDD[9] at filter at HW2_Part2.java:77), which has no missing parents
+[INFO ]20161114@15:57:01,440:org.apache.spark.storage.MemoryStore - Block broadcast_7 stored as values in memory (estimated size 4.1 KB, free 541.5 KB)
+[INFO ]20161114@15:57:01,487:org.apache.spark.storage.MemoryStore - Block broadcast_7_piece0 stored as bytes in memory (estimated size 2.3 KB, free 543.7 KB)
+[INFO ]20161114@15:57:01,488:org.apache.spark.storage.BlockManagerInfo - Added broadcast_7_piece0 in memory on localhost:37375 (size: 2.3 KB, free: 499.9 MB)
+[INFO ]20161114@15:57:01,489:org.apache.spark.SparkContext - Created broadcast 7 from broadcast at DAGScheduler.scala:1006
+[INFO ]20161114@15:57:01,490:org.apache.spark.scheduler.DAGScheduler - Submitting 1 missing tasks from ResultStage 11 (MapPartitionsRDD[9] at filter at HW2_Part2.java:77)
+[INFO ]20161114@15:57:01,491:org.apache.spark.scheduler.TaskSchedulerImpl - Adding task set 11.0 with 1 tasks
+[INFO ]20161114@15:57:01,492:org.apache.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 11.0 (TID 5, localhost, partition 0,PROCESS_LOCAL, 1967 bytes)
+[INFO ]20161114@15:57:01,492:org.apache.spark.executor.Executor - Running task 0.0 in stage 11.0 (TID 5)
+[INFO ]20161114@15:57:01,495:org.apache.spark.storage.BlockManager - Found block rdd_9_0 locally
+[INFO ]20161114@15:57:01,499:org.apache.spark.executor.Executor - Finished task 0.0 in stage 11.0 (TID 5). 2082 bytes result sent to driver
+[INFO ]20161114@15:57:01,501:org.apache.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 11.0 (TID 5) in 10 ms on localhost (1/1)
+[INFO ]20161114@15:57:01,501:org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 11.0, whose tasks have all completed, from pool 
+[INFO ]20161114@15:57:01,502:org.apache.spark.scheduler.DAGScheduler - ResultStage 11 (count at HW2_Part2.java:99) finished in 0.001 s
+[INFO ]20161114@15:57:01,505:org.apache.spark.scheduler.DAGScheduler - Job 3 finished: count at HW2_Part2.java:99, took 0.068211 s
+[INFO ]20161114@15:57:01,607:org.apache.spark.ContextCleaner - Cleaned accumulator 5
+[INFO ]20161114@15:57:01,679:org.apache.spark.SparkContext - Invoking stop() from shutdown hook
+[INFO ]20161114@15:57:01,767:org.apache.spark.storage.BlockManagerInfo - Removed broadcast_5_piece0 on localhost:37375 in memory (size: 2.8 KB, free: 499.9 MB)
+[INFO ]20161114@15:57:01,792:org.apache.spark.ContextCleaner - Cleaned accumulator 6
+[INFO ]20161114@15:57:01,793:org.apache.spark.storage.BlockManagerInfo - Removed broadcast_6_piece0 on localhost:37375 in memory (size: 2.8 KB, free: 499.9 MB)
+[INFO ]20161114@15:57:01,824:org.apache.spark.ui.SparkUI - Stopped Spark web UI at http://10.0.2.15:4040
+[INFO ]20161114@15:57:01,890:org.apache.spark.MapOutputTrackerMasterEndpoint - MapOutputTrackerMasterEndpoint stopped!
+[INFO ]20161114@15:57:01,990:org.apache.spark.storage.MemoryStore - MemoryStore cleared
+[INFO ]20161114@15:57:01,991:org.apache.spark.storage.BlockManager - BlockManager stopped
+[INFO ]20161114@15:57:01,998:org.apache.spark.storage.BlockManagerMaster - BlockManagerMaster stopped
+[INFO ]20161114@15:57:02,014:org.apache.spark.scheduler.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint - OutputCommitCoordinator stopped!
+[INFO ]20161114@15:57:02,051:org.apache.spark.SparkContext - Successfully stopped SparkContext
+[INFO ]20161114@15:57:02,054:org.apache.spark.util.ShutdownHookManager - Shutdown hook called
+[INFO ]20161114@15:57:02,055:org.apache.spark.util.ShutdownHookManager - Deleting directory /tmp/spark-d9137f44-b961-4e2b-94bf-9f8642d24ddf

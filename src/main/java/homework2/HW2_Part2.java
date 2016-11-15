@@ -5,7 +5,6 @@ import java.io.StringReader;
 import java.util.Comparator;
 import java.util.List;
 
-import org.apache.spark.Accumulator;
 import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.api.java.function.PairFunction;
@@ -17,7 +16,6 @@ import util.JoinCsvFiles;
 public class HW2_Part2 {
 	private static int low52wIndex = 8;
 	private static int high52wIndex = 9;
-	private static final String BLANK = "";
 
 	static class MySecondarySort implements Comparator<Tuple2<String, Float>>, Serializable {
 		final static MySecondarySort INSTANCE = new MySecondarySort();
@@ -64,7 +62,6 @@ public class HW2_Part2 {
 		}
 		String master = "local";
 		JavaSparkContext sc = new JavaSparkContext(master, "basicjoincsv");
-		Accumulator<Integer> counter = sc.accumulator(0);
 
 		String csv1 = args[0];
 		String csv2 = args[1];
